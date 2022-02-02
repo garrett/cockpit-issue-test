@@ -33,7 +33,7 @@ body:
   - type: input
     id: os-version
     attributes:
-      label: OS version
+      label: Operating system version
       description: Which version of the above selected operating system are you using?
     validations:
       required: false
@@ -57,7 +57,7 @@ body:
 
         Please share the operating system where you're using the browser.
       placeholder: |
-        examples: Windows 10, macOS 12.2, macOS Big Sur, iOS 15.3, Fedora 35, etc.
+        examples: Windows 10, macOS 12.2, iOS 15.3, Fedora 35, etc.
     validations:
       required: false
   - type: dropdown
