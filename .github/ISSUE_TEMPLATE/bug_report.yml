@@ -16,6 +16,8 @@ body:
         1. 
         2. 
         3. 
+
+
     validations:
       required: true
   - type: markdown
@@ -53,7 +55,7 @@ body:
     id: os-version
     attributes:
       label: Server operating system version
-      description: Which version of the above selected operating system are you using?
+      description: Which version of the above selected operating system are you using? (This is especially useful, if it's not the latest version.)
     validations:
       required: false
   - type: dropdown
