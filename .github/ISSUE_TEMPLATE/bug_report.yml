@@ -32,12 +32,10 @@ body:
 
         ---
 
-
         _Everything below is optional, but useful for us to help fix the problem._
 
         ---
 
-        <br>
   - type: dropdown
     id: page
     attributes:
@@ -65,11 +63,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        <p>
-        
         :information_source: If you're using Debian or Ubuntu, a much newer version of Cockpit is available in backports. Newer versions might fix the problem you're experiencing. For more details on backports, please [read about it on our installation page](https://cockpit-project.org/running.html#debian).
-
-        </p>
   - type: markdown
     attributes:
       value: |
