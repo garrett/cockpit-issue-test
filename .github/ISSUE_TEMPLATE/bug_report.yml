@@ -47,7 +47,10 @@ body:
         - label: Safari
         - label: GNOME Web
         - label: Cockpit Client / Cockpit Desktop
-        - label: other
+        - type: input
+          id: other
+          attributes:
+            label: Other
   - type: dropdown
     id: page
     attributes:
