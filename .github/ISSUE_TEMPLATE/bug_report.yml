@@ -67,9 +67,9 @@ body:
     attributes:
       label: What browsers are you using?
       description: |
-        Including browser information helps with debugging, especially if things look odd or if pages are blank.
+        (Multiple choices available.) Including browser information helps with debugging, especially if things look odd or if pages are blank.
 
-        (If your browser isn't in the list, select other and mention in the explaination text entry above.)
+        If your browser isn't in the list, select other and mention in the explaination text entry above.
       multiple: true
       options:
         - Firefox
