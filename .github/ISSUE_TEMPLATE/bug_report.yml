@@ -50,6 +50,18 @@ body:
         - terminal
         - selinux
         - shell
+  - type: input
+    id: cockpit-version
+    attributes:
+      label: Version of Cockpit
+      description: Which version of Cockpit are you using? You can find this in "About Web Console" under the help menu at the top-right of Cockpit. (In older versions, the about menu option was under the rightmost menu.)
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        ### :information_source: If you're using Debian or Ubuntu, a much newer version of Cockpit is available in backports. Newer versions might fix the problem you're experiencing. For more details on backports, please [read about it on our installation page](https://cockpit-project.org/running.html#debian).
+        
   - type: dropdown
     id: os-server
     attributes:
@@ -58,19 +70,12 @@ body:
       options:
         - Arch Linux
         - CentOS
-        - CentOS Stream
         - Clear Linux
-        - Debian Stable
-        - Debian Unstable
-        - Debian Testing
+        - Debian
         - Fedora
-        - Fedora CoreOS
-        - Fedora IoT
         - Red Hat Enterprise Linux
         - Ubuntu
-        - Ubuntu LTS
-        - openSUSE Tumbleweed
-        - openSUSE Leap
+        - openSUSE
         - other
     validations:
       required: false
