@@ -37,7 +37,7 @@ body:
       description: Which version of the above selected operating system are you using?
     validations:
       required: false
-  - type: dropdown
+  - type: checkboxes
     id: browsers
     attributes:
       label: What browsers are you seeing the problem on?
@@ -72,7 +72,6 @@ body:
     attributes:
       label: Please help us out by explaining how to reproduce it.
       description: Include steps on how to reproduce, screenshots if visible, etc.
-
     validations:
       required: true
   - type: textarea
