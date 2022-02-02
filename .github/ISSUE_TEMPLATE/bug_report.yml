@@ -41,9 +41,7 @@ body:
   - type: dropdown
     id: page
     attributes:
-      label: What's affected?
-      description: |
-        Where are you noticing problems in Cockpit?
+      label: Where is the problem?
       options:
         - not applicable / unknown
         - overview
@@ -61,14 +59,17 @@ body:
     id: cockpit-version
     attributes:
       label: Version of Cockpit
-      description: Which version of Cockpit are you using? You can find this in "About Web Console" under the help menu at the top-right of Cockpit. (In older versions, the about menu option was under the rightmost menu.)
+      description: You can find this in "About Web Console" under the help menu at the top-right of Cockpit. (In older versions, the about menu option was under the rightmost menu.)
     validations:
       required: false
   - type: markdown
     attributes:
       value: |
-        :information_source: If you're using Debian or Ubuntu, a much newer version of Cockpit is available in backports. Newer versions might fix the problem you're experiencing. For more details on backports, please [read about it on our installation page](https://cockpit-project.org/running.html#debian).
-        
+        :information_source: <small>If you're using Debian or Ubuntu, a much newer version of Cockpit is available in backports. Newer versions might fix the problem you're experiencing. For more details on backports, please [read about it on our installation page](https://cockpit-project.org/running.html#debian).</small>
+  - type: markdown
+    attributes:
+      value: |
+        <!-- add a bit of space -->
   - type: dropdown
     id: os-server
     attributes:
@@ -93,12 +94,16 @@ body:
       description: Which version of the above selected operating system are you using? (This is especially useful, if it's not the latest version.)
     validations:
       required: false
+  - type: markdown
+    attributes:
+      value: |
+        <!-- add a bit of space -->
   - type: dropdown
     id: browsers
     attributes:
       label: What browsers are you using?
       description: |
-        (Multiple choices available.) Including browser information helps with debugging, especially if things look odd or if pages are blank.
+        (Multiple choices available.) Browser information helps with debugging, especially if things look odd or if pages are blank.
 
         If your browser isn't in the list, select other and mention in the explaination text entry above.
       multiple: true
@@ -125,6 +130,10 @@ body:
         examples: Windows 10, macOS 12.2, iOS 15.3, Fedora 35, etc.
     validations:
       required: false
+  - type: markdown
+    attributes:
+      value: |
+        <!-- add a bit of space -->
   - type: textarea
     id: logs
     attributes:
