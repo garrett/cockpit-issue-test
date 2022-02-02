@@ -17,10 +17,16 @@ body:
   - type: markdown
     attributes:
       value: |
+        ---
+
         Thanks for taking the time to fill out this bug report!
         
         - If you want to discuss something, [post a new discussion](https://github.com/cockpit-project/cockpit/discussions/new) in our [discussion forum](https://github.com/cockpit-project/cockpit/discussions).
         - If you have a problem with a component, those issues are filed elsewhere: [Machines](https://github.com/cockpit-project/cockpit-machines/issues/new), [Podman](https://github.com/cockpit-project/cockpit-podman/issues/new/choose), [OStree](https://github.com/cockpit-project/cockpit-ostree/issues/new), or the [starter kit](https://github.com/cockpit-project/starter-kit/issues/new). 
+
+        ---
+
+        Everything below is optional, but useful for us to help fix the problem.
   - type: dropdown
     id: os-server
     attributes:
