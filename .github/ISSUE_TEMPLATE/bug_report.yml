@@ -41,7 +41,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        :dvd: If you're using Debian or Ubuntu, a newer version of Cockpit (which might solve your issue) is available in backports. For more details on backports, please [read about it on our installation page](https://cockpit-project.org/running.html#debian).
+        :airplane: If you're using Debian or Ubuntu, a newer version of Cockpit (which might solve your issue) is available in backports. For more details on backports, please [read about it on our installation page](https://cockpit-project.org/running.html#debian).
   - type: markdown
     attributes:
       value: |
