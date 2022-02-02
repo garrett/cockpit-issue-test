@@ -44,9 +44,11 @@ body:
       multiple: true
       options:
         - Firefox
-        - Chrome, Edge, Brave, or other Chromium-based browser
+        - Chrome
+        - Edge
+        - Brave
         - Safari
-        - GNOME Web / other WebKit-based browser
+        - GNOME Web
         - Cockpit Client / Cockpit Desktop
         - Other (specify in the comments)
   - type: input
