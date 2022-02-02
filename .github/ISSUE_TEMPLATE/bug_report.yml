@@ -23,7 +23,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ### :information_source: Please note
+        ### :speech_balloon: Please note
         
         - If you want to discuss something, [post a new discussion](https://github.com/cockpit-project/cockpit/discussions/new) in our [discussion forum](https://github.com/cockpit-project/cockpit/discussions).
         - If you have a problem with a component, those issues are filed elsewhere: [Machines](https://github.com/cockpit-project/cockpit-machines/issues/new), [Podman](https://github.com/cockpit-project/cockpit-podman/issues/new/choose), [OStree](https://github.com/cockpit-project/cockpit-ostree/issues/new), or the [starter kit](https://github.com/cockpit-project/starter-kit/issues/new). 
@@ -39,7 +39,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        :information_source: If you're using Debian or Ubuntu, a much newer version of Cockpit is available in backports. Newer versions might fix the problem you're experiencing. For more details on backports, please [read about it on our installation page](https://cockpit-project.org/running.html#debian).
+        :dvd: If you're using Debian or Ubuntu, a much newer version of Cockpit is available in backports. Newer versions might fix the problem you're experiencing. For more details on backports, please [read about it on our installation page](https://cockpit-project.org/running.html#debian).
   - type: markdown
     attributes:
       value: |
