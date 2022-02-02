@@ -61,7 +61,9 @@ body:
     id: cockpit-version
     attributes:
       label: Version of Cockpit
-      description: You can find this in "About Web Console" under the help menu at the top-right of Cockpit. (In older versions, the about menu option was under the rightmost menu.)
+      description: |
+        You can find this in "About Web Console" under the help menu at the top-right of Cockpit.
+        (In older versions, the about menu option was under the rightmost menu.)
     validations:
       required: false
   - type: markdown
