@@ -127,16 +127,6 @@ body:
         - GNOME Web
         - Cockpit Client / Cockpit Desktop
         - Other
-  - type: input
-    id: os-client
-    attributes:
-      label: Client operating system
-      description: |
-        Please share the operating system where you're using the browser.
-      placeholder: |
-        examples: Windows 10, macOS 12.2, iOS 15.3, Fedora 35, etc.
-    validations:
-      required: false
   - type: markdown
     attributes:
       value: |
