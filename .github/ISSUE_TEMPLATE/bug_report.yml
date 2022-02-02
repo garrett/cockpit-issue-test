@@ -28,15 +28,16 @@ body:
         - If you want to discuss something, [post a new discussion](https://github.com/cockpit-project/cockpit/discussions/new) in our [discussion forum](https://github.com/cockpit-project/cockpit/discussions).
         - If you have a problem with a component, those issues are filed elsewhere: [Machines](https://github.com/cockpit-project/cockpit-machines/issues/new), [Podman](https://github.com/cockpit-project/cockpit-podman/issues/new/choose), [OStree](https://github.com/cockpit-project/cockpit-ostree/issues/new), or the [starter kit](https://github.com/cockpit-project/starter-kit/issues/new). 
 
-        ---
-
-        <br><br>
-
-        _Everything below is optional, but useful for us to help fix the problem._
-
         <br>
 
         ---
+
+
+        _Everything below is optional, but useful for us to help fix the problem._
+
+        ---
+
+        <br>
   - type: dropdown
     id: page
     attributes:
