@@ -1,5 +1,5 @@
 name: Bug Report
-description: This is for bugs and general problems. If you want to discuss something, [post a new discussion](https://github.com/cockpit-project/cockpit/discussions/new) in our [discussion forum](https://github.com/cockpit-project/cockpit/discussions). Issues are filed elsewhere if you're having a problem with [Machines](https://github.com/cockpit-project/cockpit-machines/issues/new), [Podman](https://github.com/cockpit-project/cockpit-podman/issues/new/choose), [OStree](https://github.com/cockpit-project/cockpit-ostree/issues/new), or the [starter kit](https://github.com/cockpit-project/starter-kit/issues/new). 
+description: This is for bugs and general problems. If you want to discuss something, [post a new discussion](https://github.com/cockpit-project/cockpit/discussions/new) in our [discussion forum](https://github.com/cockpit-project/cockpit/discussions).
 labels: ["bug"]
 body:
   - type: markdown
