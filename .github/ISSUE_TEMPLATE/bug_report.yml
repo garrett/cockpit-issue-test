@@ -57,24 +57,26 @@ body:
       value: |
         <!-- add a bit of space -->
   - type: dropdown
-    id: label
+    id: page
     attributes:
-      label: Where is the problem?
+      label: Where is the problem in Cockpit?
       options:
-        - not applicable / unknown
-        - documentation
-        - duplicate
-        - overview
-        - metrics
-        - logs
-        - storage
-        - networking
-        - user accounts
-        - services
-        - software updates
-        - terminal
-        - selinux
-        - shell
+        - Overview
+        - Metrics
+        - Logs
+        - Storage
+        - Networking
+        - Firewall
+        - Accounts
+        - Services
+        - Applications
+        - Software updates
+        - Diagnostic Reports
+        - SELinux
+        - Terminal
+        - "Navigation & Shell"
+        - Documentation
+        - Unknown or not applicable
   - type: markdown
     attributes:
       value: |
