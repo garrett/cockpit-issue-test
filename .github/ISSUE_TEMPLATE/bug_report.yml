@@ -9,6 +9,14 @@ body:
         
         - If you want to discuss something, [post a new discussion](https://github.com/cockpit-project/cockpit/discussions/new) in our [discussion forum](https://github.com/cockpit-project/cockpit/discussions).
         - If you're having a problem with a separate component, those issues are filed elsewhere: [Machines](https://github.com/cockpit-project/cockpit-machines/issues/new), [Podman](https://github.com/cockpit-project/cockpit-podman/issues/new/choose), [OStree](https://github.com/cockpit-project/cockpit-ostree/issues/new), or the [starter kit](https://github.com/cockpit-project/starter-kit/issues/new). 
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Please help us out by explaining how to reproduce it.
+      description: |
+        Include steps on how to reproduce, screenshots if visible, etc.
+    validations:
+      required: true
   - type: dropdown
     id: os-server
     attributes:
@@ -81,14 +89,6 @@ body:
         - terminal
         - selinux
         - shell
-  - type: textarea
-    id: what-happened
-    attributes:
-      label: Please help us out by explaining how to reproduce it.
-      description: |
-        Include steps on how to reproduce, screenshots if visible, etc.
-    validations:
-      required: true
   - type: textarea
     id: logs
     attributes:
