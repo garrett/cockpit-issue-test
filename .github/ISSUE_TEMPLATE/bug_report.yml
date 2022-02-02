@@ -36,6 +36,10 @@ body:
 
         ---
 
+  - type: markdown
+    attributes:
+      value: |
+        <!-- add a bit of space -->
   - type: dropdown
     id: page
     attributes:
