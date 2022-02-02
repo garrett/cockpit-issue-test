@@ -9,7 +9,7 @@ body:
   - type: textarea
     id: what-happened
     attributes:
-      label: Please help us out by explaining how to reproduce it.
+      label: Explain what happens
       description: |
         Include steps on how to reproduce. Including screenshots is very helpful.
       value: |
