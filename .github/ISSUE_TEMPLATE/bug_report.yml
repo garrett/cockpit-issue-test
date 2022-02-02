@@ -6,19 +6,6 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report! It helps to make sure Cockpit works well everyone, including you! :sparkles:
-  - type: input
-    id: cockpit-version
-    attributes:
-      label: Version of Cockpit
-      description: |
-        You can find this in "About Web Console" under the help menu at the top-right of Cockpit.
-        (In older versions, the about menu option was under the rightmost menu.)
-    validations:
-      required: false
-  - type: markdown
-    attributes:
-      value: |
-        :information_source: If you're using Debian or Ubuntu, a much newer version of Cockpit is available in backports. Newer versions might fix the problem you're experiencing. For more details on backports, please [read about it on our installation page](https://cockpit-project.org/running.html#debian).
   - type: textarea
     id: what-happened
     attributes:
@@ -40,7 +27,19 @@ body:
         
         - If you want to discuss something, [post a new discussion](https://github.com/cockpit-project/cockpit/discussions/new) in our [discussion forum](https://github.com/cockpit-project/cockpit/discussions).
         - If you have a problem with a component, those issues are filed elsewhere: [Machines](https://github.com/cockpit-project/cockpit-machines/issues/new), [Podman](https://github.com/cockpit-project/cockpit-podman/issues/new/choose), [OStree](https://github.com/cockpit-project/cockpit-ostree/issues/new), or the [starter kit](https://github.com/cockpit-project/starter-kit/issues/new). 
-
+  - type: input
+    id: cockpit-version
+    attributes:
+      label: Version of Cockpit
+      description: |
+        You can find this in "About Web Console" under the help menu at the top-right of Cockpit.
+        (In older versions, the about menu option was under the rightmost menu.)
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        :information_source: If you're using Debian or Ubuntu, a much newer version of Cockpit is available in backports. Newer versions might fix the problem you're experiencing. For more details on backports, please [read about it on our installation page](https://cockpit-project.org/running.html#debian).
   - type: markdown
     attributes:
       value: |
@@ -51,7 +50,6 @@ body:
         _Everything below is optional, but useful for us to help fix the problem._
 
         ---
-
   - type: markdown
     attributes:
       value: |
