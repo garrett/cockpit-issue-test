@@ -1,0 +1,82 @@
+name: Bug Report
+description: This is for bugs and general problems. If you want to discuss something, [post a new discussion](https://github.com/cockpit-project/cockpit/discussions/new) in our [discussion forum](https://github.com/cockpit-project/cockpit/discussions). Issues are filed elsewhere if you're having a problem with [Machines](https://github.com/cockpit-project/cockpit-machines/issues/new), [Podman](https://github.com/cockpit-project/cockpit-podman/issues/new/choose), [OStree](https://github.com/cockpit-project/cockpit-ostree/issues/new), or the [starter kit](https://github.com/cockpit-project/starter-kit/issues/new). 
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: dropdown
+    id: page
+    attributes:
+      label: Page
+      description: Which part of Cockpit is affected?
+      options:
+        - not applicable / unspecified
+        - overview
+        - metrics
+        - logs
+        - storage
+        - networking
+        - user accounts
+        - services
+        - software updates
+        - terminal
+        - selinux
+        - shell
+    validations:
+      required: true
+  - type: dropdown
+    id: os-server
+    attributes:
+      label: Operating system (server)
+      description: Which Linux distribution are you using on the server where Cockpit is installed?
+      options:
+        - unspecified
+        - Arch Linux
+        - CentOS
+        - CentOS Stream
+        - Clear Linux
+        - Debian
+        - Fedora CoreOS
+        - Fedora Linux
+        - Red Hat Enterprise Linux
+        - Ubuntu
+        - openSUSE Leap
+        - openSUSE Tumbleweed
+        - other
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: OS version
+      description: Which version of the above selected operating system are you using?
+    validations:
+      required: false
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - GNOME Web
+        - Cockpit Client / Cockpit Desktop
+        - other
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Please help us out by explaining how to reproduce it.
+      description: Include steps on how to reproduce, screenshots if visible, etc.
+
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant parts of the system log are also useful
+      description: If the issue happened in the last 10 minutes, use `journalctl --since -10m`. If you know which systemd unit was affected, use `journalctl -u cockpit -u <unit>`. This will be automatically formatted, backticks are not needed.
+      render: shell
