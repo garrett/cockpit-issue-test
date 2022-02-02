@@ -41,13 +41,17 @@ body:
         - CentOS
         - CentOS Stream
         - Clear Linux
-        - Debian
+        - Debian Stable
+        - Debian Unstable
+        - Debian Testing
+        - Fedora
         - Fedora CoreOS
-        - Fedora Linux
+        - Fedora IoT
         - Red Hat Enterprise Linux
         - Ubuntu
-        - openSUSE Leap
+        - Ubuntu LTS
         - openSUSE Tumbleweed
+        - openSUSE Leap
         - other
     validations:
       required: false
@@ -64,16 +68,22 @@ body:
       label: What browsers are you using?
       description: |
         Including browser information helps with debugging, especially if things look odd or if pages are blank.
+
+        (If your browser isn't in the list, select other and mention in the explaination text entry above.)
       multiple: true
       options:
         - Firefox
+        - Firefox Mobile on Android
         - Chrome
+        - Chrome on Android
         - Edge
         - Brave
-        - Safari
+        - Safari macOS
+        - Safari on iPhone
+        - Safari on iPad
         - GNOME Web
         - Cockpit Client / Cockpit Desktop
-        - Other (specify in the comments)
+        - Other
   - type: input
     id: os-client
     attributes:
