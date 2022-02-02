@@ -1,5 +1,5 @@
 name: Bug Report
-description: This is for bugs and general problems. If you want to discuss something, [post a new discussion](https://github.com/cockpit-project/cockpit/discussions/new) in our [discussion forum](https://github.com/cockpit-project/cockpit/discussions).
+description: This is for bugs and general problems.
 labels: ["bug"]
 body:
   - type: markdown
