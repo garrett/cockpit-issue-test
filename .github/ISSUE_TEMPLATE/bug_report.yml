@@ -57,11 +57,13 @@ body:
       value: |
         <!-- add a bit of space -->
   - type: dropdown
-    id: page
+    id: label
     attributes:
       label: Where is the problem?
       options:
         - not applicable / unknown
+        - documentation
+        - duplicate
         - overview
         - metrics
         - logs
