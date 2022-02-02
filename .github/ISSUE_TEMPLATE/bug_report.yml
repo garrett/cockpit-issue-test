@@ -37,17 +37,18 @@ body:
       description: Which version of the above selected operating system are you using?
     validations:
       required: false
-  - type: checkboxes
+  - type: dropdown
     id: browsers
     attributes:
       label: What browsers are you seeing the problem on?
+      multiple: true
       options:
-        - label: Firefox
-        - label: Chrome, Edge, Brave, or other Chromium-based browser
-        - label: Safari
-        - label: GNOME Web / other WebKit-based browser
-        - label: Cockpit Client / Cockpit Desktop
-        - label: Other (specify in the comments)
+        - Firefox
+        - Chrome, Edge, Brave, or other Chromium-based browser
+        - Safari
+        - GNOME Web / other WebKit-based browser
+        - Cockpit Client / Cockpit Desktop
+        - Other (specify in the comments)
   - type: input
     id: os-client
     attributes:
