@@ -29,7 +29,7 @@ body:
         - openSUSE Tumbleweed
         - other
     validations:
-      required: true
+      required: false
   - type: input
     id: os-version
     attributes:
