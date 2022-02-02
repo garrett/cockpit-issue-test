@@ -43,14 +43,11 @@ body:
       label: What browsers are you seeing the problem on?
       options:
         - label: Firefox
-        - label: Chrome
+        - label: Chrome, Edge, Brave, or other Chromium-based browser
         - label: Safari
-        - label: GNOME Web
-        - label: Cockpit Client / Cockpit Desktop
-        - type: input
-          id: other
-          attributes:
-            label: Other
+        - label: GNOME Web or other WebKit-based browser
+        - label: Cockpit Client or Cockpit Desktop
+        - label: Other (specify in the comments)
   - type: dropdown
     id: page
     attributes:
