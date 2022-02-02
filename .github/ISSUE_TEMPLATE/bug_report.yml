@@ -1,5 +1,6 @@
 name: Bug Report
 description: This is for bugs and general problems.
+labels: ["bug"]
 body:
   - type: markdown
     attributes:
@@ -56,13 +57,11 @@ body:
       value: |
         <!-- add a bit of space -->
   - type: dropdown
-    id: labels
+    id: where
     attributes:
       label: Where is the problem in Cockpit?
       options:
         - Overview
-        - bug
-        - duplicate
         - Metrics
         - Logs
         - Storage
