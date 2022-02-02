@@ -38,7 +38,7 @@ body:
       description: |
         Where are you noticing problems in Cockpit?
       options:
-        - not applicable / unspecified
+        - not applicable / unknown
         - overview
         - metrics
         - logs
