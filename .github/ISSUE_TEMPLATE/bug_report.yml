@@ -7,13 +7,12 @@ body:
       value: |
         Thanks for taking the time to fill out this bug report!
         
-        If you want to discuss something, [post a new discussion](https://github.com/cockpit-project/cockpit/discussions/new) in our [discussion forum](https://github.com/cockpit-project/cockpit/discussions).
-        
-        If you're having a problem with a separate component, those issues are filed elsewhere: [Machines](https://github.com/cockpit-project/cockpit-machines/issues/new), [Podman](https://github.com/cockpit-project/cockpit-podman/issues/new/choose), [OStree](https://github.com/cockpit-project/cockpit-ostree/issues/new), or the [starter kit](https://github.com/cockpit-project/starter-kit/issues/new). 
+        - If you want to discuss something, [post a new discussion](https://github.com/cockpit-project/cockpit/discussions/new) in our [discussion forum](https://github.com/cockpit-project/cockpit/discussions).
+        - If you're having a problem with a separate component, those issues are filed elsewhere: [Machines](https://github.com/cockpit-project/cockpit-machines/issues/new), [Podman](https://github.com/cockpit-project/cockpit-podman/issues/new/choose), [OStree](https://github.com/cockpit-project/cockpit-ostree/issues/new), or the [starter kit](https://github.com/cockpit-project/starter-kit/issues/new). 
   - type: dropdown
     id: os-server
     attributes:
-      label: Operating system (server)
+      label: Server operating system
       description: Which Linux distribution are you using on the server where Cockpit is installed?
       options:
         - Arch Linux
@@ -33,14 +32,18 @@ body:
   - type: input
     id: os-version
     attributes:
-      label: Operating system version
+      label: Server operating system version
       description: Which version of the above selected operating system are you using?
     validations:
       required: false
   - type: dropdown
     id: browsers
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: What browsers are you using?
+      description: |
+        (Optional)
+
+        Including browser information helps with debugging, especially if things look odd or if pages are blank.
       multiple: true
       options:
         - Firefox
@@ -54,7 +57,7 @@ body:
   - type: input
     id: os-client
     attributes:
-      label: Operating system (client)
+      label: Client operating system
       description: |
         (Optional)
 
@@ -85,7 +88,8 @@ body:
     id: what-happened
     attributes:
       label: Please help us out by explaining how to reproduce it.
-      description: Include steps on how to reproduce, screenshots if visible, etc.
+      description: |
+        Include steps on how to reproduce, screenshots if visible, etc.
     validations:
       required: true
   - type: textarea
