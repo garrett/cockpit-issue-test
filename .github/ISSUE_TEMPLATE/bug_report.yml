@@ -61,6 +61,8 @@ body:
       label: Where is the problem in Cockpit?
       options:
         - Overview
+        - bug
+        - duplicate
         - Metrics
         - Logs
         - Storage
