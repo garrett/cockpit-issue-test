@@ -94,8 +94,10 @@ body:
     attributes:
       label: System log
       description: |
-        (Optional; feel free to leave blank if it does not apply) Relevant parts of the server's log are useful.  This will be automatically formatted, backticks are not needed.
+        Relevant parts of the server's log are useful.  This will be automatically formatted, backticks are not needed.
 
         - If the issue happened in the last 10 minutes, use: `journalctl --since -10m`
         - If you know which systemd unit was affected, use: `journalctl -u cockpit -u <unit>`
+
+        Leave empty if unsure or if this doesn't apply.
       render: shell
