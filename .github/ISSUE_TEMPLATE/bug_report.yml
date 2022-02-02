@@ -41,14 +41,13 @@ body:
     id: browsers
     attributes:
       label: What browsers are you seeing the problem on?
-      multiple: true
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - GNOME Web
-        - Cockpit Client / Cockpit Desktop
-        - other
+        - label: Firefox
+        - label: Chrome
+        - label: Safari
+        - label: GNOME Web
+        - label: Cockpit Client / Cockpit Desktop
+        - label: other
   - type: dropdown
     id: page
     attributes:
