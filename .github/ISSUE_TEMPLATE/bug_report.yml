@@ -31,8 +31,8 @@ body:
         ---
 
         <br>
-        
         _Everything below is optional, but useful for us to help fix the problem._
+        <br>
 
         ---
   - type: dropdown
