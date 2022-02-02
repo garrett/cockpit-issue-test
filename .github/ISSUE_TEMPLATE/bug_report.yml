@@ -36,7 +36,7 @@ body:
     attributes:
       label: What's affected?
       description: |
-        Which part of Cockpit are you noticing problems?
+        Where are you noticing problems in Cockpit?
       options:
         - not applicable / unspecified
         - overview
