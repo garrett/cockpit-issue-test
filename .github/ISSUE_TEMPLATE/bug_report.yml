@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report! It helps to make sure Cockpit works well for you and everyone!
+        Thanks for taking the time to fill out this bug report! It helps to make sure Cockpit works well everyone, including you!
   - type: textarea
     id: what-happened
     attributes:
