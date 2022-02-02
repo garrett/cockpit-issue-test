@@ -11,32 +11,11 @@ body:
         
         If you're having a problem with a separate component, those issues are filed elsewhere: [Machines](https://github.com/cockpit-project/cockpit-machines/issues/new), [Podman](https://github.com/cockpit-project/cockpit-podman/issues/new/choose), [OStree](https://github.com/cockpit-project/cockpit-ostree/issues/new), or the [starter kit](https://github.com/cockpit-project/starter-kit/issues/new). 
   - type: dropdown
-    id: page
-    attributes:
-      label: Page
-      description: Which part of Cockpit is affected?
-      options:
-        - not applicable / unspecified
-        - overview
-        - metrics
-        - logs
-        - storage
-        - networking
-        - user accounts
-        - services
-        - software updates
-        - terminal
-        - selinux
-        - shell
-    validations:
-      required: true
-  - type: dropdown
     id: os-server
     attributes:
       label: Operating system (server)
       description: Which Linux distribution are you using on the server where Cockpit is installed?
       options:
-        - unspecified
         - Arch Linux
         - CentOS
         - CentOS Stream
@@ -70,6 +49,24 @@ body:
         - GNOME Web
         - Cockpit Client / Cockpit Desktop
         - other
+  - type: dropdown
+    id: page
+    attributes:
+      label: Page
+      description: Which part of Cockpit is affected?
+      options:
+        - not applicable / unspecified
+        - overview
+        - metrics
+        - logs
+        - storage
+        - networking
+        - user accounts
+        - services
+        - software updates
+        - terminal
+        - selinux
+        - shell
   - type: textarea
     id: what-happened
     attributes:
