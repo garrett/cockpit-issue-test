@@ -45,8 +45,8 @@ body:
         - label: Firefox
         - label: Chrome, Edge, Brave, or other Chromium-based browser
         - label: Safari
-        - label: GNOME Web or other WebKit-based browser
-        - label: Cockpit Client or Cockpit Desktop
+        - label: GNOME Web / other WebKit-based browser
+        - label: Cockpit Client / Cockpit Desktop
         - label: Other (specify in the comments)
   - type: dropdown
     id: page
@@ -77,5 +77,9 @@ body:
     id: logs
     attributes:
       label: Relevant parts of the system log are also useful
-      description: If the issue happened in the last 10 minutes, use `journalctl --since -10m`. If you know which systemd unit was affected, use `journalctl -u cockpit -u <unit>`. This will be automatically formatted, backticks are not needed.
+      description: |
+        If the issue happened in the last 10 minutes, use `journalctl --since -10m`.
+        If you know which systemd unit was affected, use `journalctl -u cockpit -u <unit>`.
+
+        This will be automatically formatted, backticks are not needed.
       render: shell
