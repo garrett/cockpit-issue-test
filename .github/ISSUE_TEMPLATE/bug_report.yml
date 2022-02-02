@@ -41,8 +41,6 @@ body:
     attributes:
       label: What browsers are you using?
       description: |
-        (Optional)
-
         Including browser information helps with debugging, especially if things look odd or if pages are blank.
       multiple: true
       options:
@@ -59,8 +57,6 @@ body:
     attributes:
       label: Client operating system
       description: |
-        (Optional)
-
         Please share the operating system where you're using the browser.
       placeholder: |
         examples: Windows 10, macOS 12.2, iOS 15.3, Fedora 35, etc.
@@ -70,7 +66,8 @@ body:
     id: page
     attributes:
       label: Page
-      description: Which part of Cockpit is affected?
+      description: |
+        Which part of Cockpit is affected?
       options:
         - not applicable / unspecified
         - overview
