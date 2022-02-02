@@ -34,9 +34,9 @@ body:
   - type: dropdown
     id: page
     attributes:
-      label: Page
+      label: What's affected?
       description: |
-        Which part of Cockpit is affected?
+        Which part of Cockpit is are you noticing problems?
       options:
         - not applicable / unspecified
         - overview
